@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Variables de entorno (NO subir secretos)
+.env
+.env.local
+
+# Base de datos local
+instance/
+*.db
+*.sqlite3
+
+# OS / IDE / logs
+.DS_Store
+.idea/
+.vscode/
+*.log

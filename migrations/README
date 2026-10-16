@@ -1,0 +1,14 @@
+# Migraciones (Flask-Migrate / Alembic)
+
+```bash
+# Crear/actualizar la carpeta (solo la primera vez ya está creada)
+flask --app wsgi:app db init
+
+# Generar una migración tras cambiar modelos
+flask --app wsgi:app db migrate -m "descripción del cambio"
+
+# Aplicar migraciones
+flask --app wsgi:app db upgrade
+```
+
+La URL de conexión se lee de `DATABASE_URL` (PostgreSQL de Supabase).
